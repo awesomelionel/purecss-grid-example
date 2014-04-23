@@ -1,0 +1,61 @@
+.container {}
+
+.header {
+  font-family: "Raleway", sans-serif;
+  max-width:768px;
+  margin: 0 auto;
+  padding:1em;
+  text-align: center;
+  h1 {
+    font-size: 350%;
+    font-weight:100;
+  }
+  h2 {
+    font-size: 100%;
+    font-weight:300;
+  }
+
+  border-bottom: 1px solid #eee;
+}
+
+.grid-example {
+  max-width:996px;
+  margin:0 auto;
+}
+
+.boxy{
+  background: #1f8dd6;
+  margin-top:1em;
+  margin-bottom:1em;
+  margin-left:0.5em;
+  margin-right:0.5em;
+  border-radius: 4px;
+  h3 {
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:17px;
+  }
+  p {
+    font-weight: 400;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:17px;
+    padding-right:17px;
+    color: #FFFFFF;
+  }
+  @include vendor-prefix(box-shadow, rgba(5, 5, 5, 0.42) 2px 2px 1px);
+}
+
+.top_divider{
+  border-radius: 4px 4px 0px 0px;
+  background:#1B7CBD;
+}
+
+@media screen and (min-width:48 em){
+  .header, .content{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}

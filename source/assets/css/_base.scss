@@ -1,0 +1,42 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+  /* Set your content font stack here: */
+  font-family: Merriweather, serif;
+}
+
+h1, h2, h3 {
+  font-family: Raleway, sans-serif;
+  margin: 0 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+  &:hover,&:focus{
+    text-decoration: none;
+  }
+}
+
+.l-box{
+  padding: 1em;
+}
+
+
+body{
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #2f2f2f;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  text-rendering: optimizeLegibility;
+}
