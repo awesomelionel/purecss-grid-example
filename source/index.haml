@@ -5,36 +5,65 @@ title: Pure CSS | Layout example
   .header
     %h1 Grids
     %h2 Laying out using Pure CSS
-  .pure-g-r.grid-example
-    .pure-u-1-2
-      .boxy
-        .top_divider
-          %h3 One-Half Column Size
-        %p This takes up half the row size
-    .pure-u-1-2
-      .boxy
-        .top_divider
-          %h3 One-Half Column Size
-        %p This one takes up the other half
-  .pure-g-r.grid-example
-    .pure-u-1-3
-      .boxy
-        .top_divider
-          %h3 One-Third Column Size
-        %p This one takes 1/3rd of the Column Size
-    .pure-u-1-3
-      .boxy
-        .top_divider
-          %h3 One-Third Column Size
-        %p This one takes 1/3rd of the Column Size
-    .pure-u-1-3
-      .boxy
-        .top_divider
-          %h3 One-Third Column Size
-        %p This one takes 1/3rd of the Column Size
   .pure-g.grid-example
+    .pure-u-1.intro-text
+      %p This is an example site to show how you could use Pure CSS griding system to layout your site.
+  .pure-g.grid-example
+    .pure-u-1.ghost-wrap
+      %code.l-box
+        \.pure-g-r
+      .pure-g-r
+        .pure-u-1-2
+          .boxy
+            .top_divider
+              %h3 .pure-u-1-2
+            %p This takes up half the row size
+        .pure-u-1-2
+          .boxy
+            .top_divider
+              %h3 .pure-u-1-2
+            %p This one takes up the other half
+  .pure-g.grid-example
+    .pure-u-1.ghost-wrap
+      %code.l-box
+        \.pure-g-r
+      .pure-g-r
+        .pure-u-1-3
+          .boxy
+            .top_divider
+              %h3 pure-u-1-3
+            %p This one takes 1/3rd of the Column Size
+        .pure-u-1-3
+          .boxy
+            .top_divider
+              %h3 pure-u-1-3
+            %p This one takes 1/3rd of the Column Size
+        .pure-u-1-3
+          .boxy
+            .top_divider
+              %h3 pure-u-1-3
+            %p This one takes 1/3rd of the Column Size
+  .pure-g.grid-example
+    .pure-u-1.ghost-wrap
+      %code.l-box
+        \.pure-g-r
+      .pure-g-r
+        .pure-u-1
+          .boxy
+            .top_divider
+              %h3 pure-u-1
+            %p This greedy fuck takes the whole column width
+.container
+  .pure-g-r.footer
     .pure-u-1
-      .boxy
-        .top_divider
-          %h3 One Large Column
-        %p This greedy fuck takes the whole column width
+      .pure-menu-horizontal
+        %ul
+          %li This site has no copyright. Made by Lionel Tan 2014 with:
+          %li
+            %a.middleman.logo{:href=>'http://middlemanapp.com/'} Middleman
+          %li
+            %a.purecss.logo{:href=>'http://purecss.io/'} PureCSS by Yahoo
+          %li and hosted on
+          %li
+            %a.github.logo{:href=>'https://github.com/awesomelionel/purecss-grid-example'} Github
+

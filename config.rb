@@ -16,6 +16,7 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+activate :directory_indexes
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -33,3 +34,11 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true # default: false
+  deploy.branch = "gh-pages"
+end
+

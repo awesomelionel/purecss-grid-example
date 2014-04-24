@@ -2,47 +2,63 @@
 
 .header {
   font-family: "Raleway", sans-serif;
-  max-width:768px;
+  max-width: 768px;
   margin: 0 auto;
-  padding:1em;
+  margin-bottom: 1em;
+  padding: 1em;
   text-align: center;
   h1 {
     font-size: 350%;
-    font-weight:100;
+    font-weight: 100;
   }
   h2 {
     font-size: 100%;
-    font-weight:300;
+    font-weight: 300;
   }
 
   border-bottom: 1px solid #eee;
 }
 
+.intro-text {
+  text-align:center;
+}
+
 .grid-example {
-  max-width:996px;
-  margin:0 auto;
+  max-width: 996px;
+  margin: 0 auto;
+  margin-bottom:1em;
+}
+
+.ghost-wrap {
+  @include vendor-prefix(border-radius, 8px);
+  background: #eee;
 }
 
 .boxy{
   background: #1f8dd6;
-  margin-top:1em;
-  margin-bottom:1em;
-  margin-left:0.5em;
-  margin-right:0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   border-radius: 4px;
   h3 {
+    font-family: monospace,serif;
     color: #FFFFFF;
     font-weight: 300;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    font-size: 1em;
+    span {
+      font-size: 0.8em;
+    }
   }
   p {
     font-weight: 400;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:17px;
-    padding-right:17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
     color: #FFFFFF;
   }
   @include vendor-prefix(box-shadow, rgba(5, 5, 5, 0.42) 2px 2px 1px);
@@ -50,11 +66,44 @@
 
 .top_divider{
   border-radius: 4px 4px 0px 0px;
-  background:#1B7CBD;
+  background: #1B7CBD;
 }
 
-@media screen and (min-width:48 em){
-  .header, .content{
+.footer {
+  max-width: 996px;
+  margin:0 auto;
+  padding:1em;
+  ul li{
+    font-family: "Raleway", sans-serif;
+    font-size:0.8em;
+    font-weight:300;
+  }
+  .logo{
+    @include vendor-prefix(border-radius, 8px);
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    color: #fff;
+    padding-left:8px;
+    padding-right:8px;
+    padding-bottom:5px;
+    padding-top:5px;
+  }
+
+  .middleman {
+    background: #333;
+  }
+
+  .purecss{
+    background: #008ed4;
+  }
+
+  .github{
+    background: #000;
+  }
+
+}
+
+@media screen and (min-width: 48 em){
+  .header, .content, .footer{
     padding-left: 2em;
     padding-right: 2em;
   }
